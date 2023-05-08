@@ -30,9 +30,9 @@ exports.default = (yamlString) => {
             return;
         }
         for (const key of Object.keys(node)) {
-        const child = node[key];
-        allDescendants(child, fn);
-        fn(child);
+            const child = node[key];
+            allDescendants(child, fn);
+            fn(child);
         }
     }
 
